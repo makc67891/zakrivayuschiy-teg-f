@@ -79,6 +79,9 @@
 
 .theme-menu__button {
   position: relative;
+  display: grid;
+  grid-template-columns: 16px auto;
+  gap: 5px;
   font-family: var(--font-accent);
   font-size: 14px;
   font-weight: var(--weight-normal);
@@ -107,7 +110,6 @@
 
 .theme-menu__button::before {
   content: "▶";
-  display: inline-block;
   opacity: 0;
 }
 
@@ -326,6 +328,7 @@
 }
 
 .dialog__floppy {
+  flex-shrink: 0;
   inline-size: 39px;
   block-size: 39px;
   color: var(--accent-color);

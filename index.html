@@ -62,7 +62,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;/html&gt;</p>
+                <span class="card__label">&lt;/html&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -83,6 +83,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -124,7 +125,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;/html&gt;</p>
+                <span class="card__label">&lt;/html&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -148,6 +149,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -189,7 +191,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;css&gt;</p>
+                <span class="card__label">&lt;css&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -211,6 +213,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -252,7 +255,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;desigions&gt;</p>
+                <span class="card__label">&lt;desigions&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -275,6 +278,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -316,7 +320,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;care&gt;</p>
+                <span class="card__label">&lt;care&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -340,6 +344,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -381,7 +386,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;support&gt;</p>
+                <span class="card__label">&lt;support&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -402,6 +407,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -443,7 +449,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;lifes-style: none;&gt;</p>
+                <span class="card__label">&lt;lifes-style: none;&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -466,6 +472,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -507,7 +514,7 @@
                   alt="Пиксельный фургон"
                   loading="lazy"
                 />
-                <p class="card__label">&lt;experience&gt;</p>
+                <span class="card__label">&lt;experience&gt;</span>
               </div>
               <div class="card__text-content">
                 <p class="card__text">
@@ -533,6 +540,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="like-icon"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -579,22 +587,18 @@
           </button>
           <dialog id="dialog" class="dialog">
             <div class="dialog__content">
-              <span>
-                <svg class="dialog__floppy" viewBox="0 0 21 21">
-                  <use href="./svg/floppy.svg#floppy"></use>
-                </svg>
-              </span>
+              <svg class="dialog__floppy" viewBox="0 0 21 21">
+                <use href="./svg/floppy.svg#floppy"></use>
+              </svg>
               <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
             </div>
-            <form method="dialog">
-              <button
-                class="dialog__button anim-button"
-                type="button"
-                onclick="window['dialog'].close();"
-              >
-                <span class="button__text">Ок</span>
-              </button>
-            </form>
+            <button
+              class="dialog__button anim-button"
+              type="button"
+              onclick="window['dialog'].close();"
+            >
+              <span class="button__text">Ок</span>
+            </button>
           </dialog>
         </div>
       </section>
